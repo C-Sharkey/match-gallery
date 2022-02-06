@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# intelliJ
+.idea
+
+# Mac dev
+.DS_Store
