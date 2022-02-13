@@ -1,4 +1,4 @@
-import { CssBaseline } from "@mui/material";
+import { Container, CssBaseline } from "@mui/material";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Button } from "../components/Button/Button";
@@ -17,37 +17,39 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
-      <Typography variant="h1">Test h1... </Typography>
-      <Typography variant="subtitle1">Test h2... </Typography>
-      <Typography variant="subtitle1">Test subtitle... </Typography>
-      <Typography variant="body1">Test body... </Typography>
+      <Container>
+        <Typography variant="h1">Test h1... </Typography>
+        <Typography variant="subtitle1">Test h2... </Typography>
+        <Typography variant="subtitle1">Test subtitle... </Typography>
+        <Typography variant="body1">Test body... </Typography>
 
-      <Button>Test Button</Button>
-      <Button color="secondary">Test Button</Button>
-      <Button color="success">Test Button</Button>
-      <Button color="error">Test Button</Button>
-      <hr />
-      <Button variant="outlined">Test Button</Button>
-      <Button variant="outlined" color="secondary">
-        Test Button
-      </Button>
-      <Button variant="outlined" color="success">
-        Test Button
-      </Button>
-      <Button variant="outlined" color="error">
-        Test Button
-      </Button>
-      <hr />
-      <Button variant="contained">Test Button</Button>
-      <Button variant="contained" color="secondary">
-        Test Button
-      </Button>
-      <Button variant="contained" color="success">
-        Test Button
-      </Button>
-      <Button variant="contained" color="error">
-        Test Button
-      </Button>
+        <Button>Test Button</Button>
+        <Button color="secondary">Test Button</Button>
+        <Button color="success">Test Button</Button>
+        <Button color="error">Test Button</Button>
+        <hr />
+        <Button variant="outlined">Test Button</Button>
+        <Button variant="outlined" color="secondary">
+          Test Button
+        </Button>
+        <Button variant="outlined" color="success">
+          Test Button
+        </Button>
+        <Button variant="outlined" color="error">
+          Test Button
+        </Button>
+        <hr />
+        <Button variant="contained">Test Button</Button>
+        <Button variant="contained" color="secondary">
+          Test Button
+        </Button>
+        <Button variant="contained" color="success">
+          Test Button
+        </Button>
+        <Button variant="contained" color="error">
+          Test Button
+        </Button>
+      </Container>
 
       <main></main>
 
