@@ -9,7 +9,7 @@ type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({ variant, color, children }) => {
   return (
-    <MuiButton variant={variant} color={color}>
+    <MuiButton data-testid={"CoreButton"} variant={variant} color={color}>
       {children}
     </MuiButton>
   );
