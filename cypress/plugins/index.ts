@@ -12,8 +12,6 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-import { startDevServer } from "@cypress/webpack-dev-server";
-// const injectDevServer = require("@cypress/react/plugins/react-scripts");
 /**
  * @type {Cypress.PluginConfig}
  */
