@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:e2e": "npx cypress open",
+    "cypress:unit": "npx cypress open-ct"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
