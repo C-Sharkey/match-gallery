@@ -1,16 +1,27 @@
 import React from "react";
-import MuiButton from "@mui/material/Button";
+import { StyledButton } from "./Button.styles";
 
-type ButtonProps = {
+type StyledButtonProps = {
   variant?: "contained" | "outlined" | "text";
-  color?: "primary" | "secondary" | "success" | "error";
+  color?: "primary" | "secondary" | "info" | "success" | "error";
+  fullWidth?: boolean;
   children: String;
 };
 
-export const Button: React.FC<ButtonProps> = ({ variant, color, children }) => {
+export const Button: React.FC<StyledButtonProps> = ({
+  variant,
+  color,
+  fullWidth,
+  children,
+}) => {
   return (
-    <MuiButton data-testid={"CoreButton"} variant={variant} color={color}>
+    <StyledButton
+      data-testid={"CoreButton"}
+      variant={variant}
+      color={color}
+      fullWidth={fullWidth}
+    >
       {children}
-    </MuiButton>
+    </StyledButton>
   );
 };
